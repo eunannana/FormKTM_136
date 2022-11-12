@@ -34,7 +34,7 @@ public class myController {
             @RequestParam(value = "thepicture") MultipartFile itspicture,
      Model courier) 
             throws IOException{
-         SimpleDateFormat newdate = new SimpleDateFormat("EEEEEEEE, dd MMMMMMM yyyy");
+         SimpleDateFormat newdate = new SimpleDateFormat("dd MMMMMMM yyyy");
         
         String myDate = newdate.format(itsdate);
         String theimg = Base64.encodeBase64String(itspicture.getBytes());
@@ -47,7 +47,7 @@ public class myController {
         courier.addAttribute("package5", itsdepartment);
         courier.addAttribute("package6", itsyear);
         courier.addAttribute("package7", itsmail);
-        courier.addAttribute("package8", itspicture);
+        courier.addAttribute("package8", itsimg);
         
         return "viewpage";
     }
