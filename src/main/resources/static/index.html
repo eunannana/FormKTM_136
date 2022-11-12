@@ -5,11 +5,126 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>KTM</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body
+            {
+                width: 450px;
+                margin: 0;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(0, -50%);
+                margin-left: -250px;
+                border: 1px solid black;
+            }
+
+            .left-div
+            {
+                margin-left: 30px;
+                width: 100px;
+                display: inline-block;
+            }
+
+            .double-colon
+            {
+                display: inline-block;
+            }
+
+            .right-div
+            {
+                margin-left: 30px;
+                display: inline-block;
+            }
+            .btn-text-right{
+                text-align: right;
+                padding-top: 10px;
+                padding-bottom: 20px;
+                padding-right: 20px;
+            }
+        </style>
     </head>
     <body>
-        <div>TODO write content</div>
+        <table style="fit-auto">
+
+            <center><h1>KTM</h1></center>
+            <hr/>
+            <form action="/nextpage" method="post" enctype="multipart/form-data">
+                <div class="box">
+                    <div class="left-div">
+                        Name
+                    </div>
+                    <div class="double-colon">
+                        <h3>:</h3>
+                    </div>
+                    <div class="right-div">
+                        <input type="text" name="thename" required="">
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="left-div">
+                        NIM
+                    </div>
+                    <div class="double-colon">
+                        <h3>:</h3>
+                    </div>
+                    <div class="right-div">
+                        <input type="text" name="thenim" required="">
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="left-div">
+                        Date of Birth
+                    </div>
+                    <div class="double-colon">
+                        <h3>:</h3>
+                    </div>
+                    <div class="right-div">
+                        <input type="date" name="thedate" required="">
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="left-div">
+                        Major
+                    </div>
+                    <div class="double-colon">
+                        <h3>:</h3>
+                    </div>
+                    <div class="right-div">
+                        <input type="text" name="themajor" required="">
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="left-div">
+                        E-mail
+                    </div>
+                    <div class="double-colon">
+                        <h3>:</h3>
+                    </div>
+                    <div class="right-div">
+                        <input type="text" name="themail" required="">
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="left-div">
+                        Image
+                    </div>
+                    <div class="double-colon">
+                        <h3>:</h3>
+                    </div>
+                    <div class="right-div">
+                        <input type="file" name="thepicture" accept="image/png, image/jpeg" required="">
+                    </div>
+                </div>
+                <div class="btn-text-right">
+
+                    <input type="submit" value="SEND" name="submit"/>
+
+                </div>
+            </form>
+
+        </table>
     </body>
 </html>
